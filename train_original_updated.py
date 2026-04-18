@@ -226,11 +226,12 @@ def train(epoch, best_val_loss):
 
         loss.backward()
         optimizer.step()
-        scheduler.step()
 
         mse_train.append(F.mse_loss(output, target).item())
         nll_train.append(loss_nll.item())
         kl_train.append(loss_kl.item())
+      
+    scheduler.step()
 
     nll_val = []
     acc_val = []
