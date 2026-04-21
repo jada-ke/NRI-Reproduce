@@ -1,3 +1,11 @@
+# Neural Relational Inference Under Partial Observations
+This is an extension of the original NRI model by Kipf et al. to handle partial observations under MAR and MCAR.
+The original repository can be found here: https://github.com/ethanfetaya/NRI
+
+The masked_version folder includes a naive approach of adding the mask as a feature to the encoder, as well as a refactored version of the code using Python 3.10 and PyTorch 2.5.1 to be able to run on more modern clusters. 
+
+------------------------------------------------------------------------------------
+
 # Neural relational inference for interacting systems
 
 This repository contains the official PyTorch implementation of:

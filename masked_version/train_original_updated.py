@@ -12,8 +12,8 @@ from torch.optim import lr_scheduler
 import torch
 print(f"Supported Architectures: {torch.cuda.get_arch_list()}")
 
-from utils_updated import *
-from modules_updated import *
+from masked_version.utils_updated import *
+from masked_version.modules_updated import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--no-cuda', action='store_true', default=False,
